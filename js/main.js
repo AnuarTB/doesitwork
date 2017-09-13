@@ -1,6 +1,7 @@
-function main(){
-	var day_of_week = moment().tz("Asia/Seoul").format("dddd");
-	console.log(day_of_week);
-}
-
-main()
+$(document).ready(function(){
+	var obj = $.getJSON('json/data.json&callback=?', function(result){
+		$.each(result, function(i, field){
+			$('div').append(field + ' ');
+		});
+	});
+});

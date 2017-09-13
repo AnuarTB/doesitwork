@@ -1,49 +1,81 @@
-[
-	{ "title": "Kaimaru",
-		"hours": 
-		[
-			{ "Monday": 
-				[
-					{"start": "0900", "finish": "1300"},
-					{"start": "1400", "finish": "1900"}
-				]
-			},
-			{ "Tuesday": 
-				[
-					{"start": "0900", "finish": "1300"},
-					{"start": "1400", "finish": "1900"}
-				]
-			},
-			{ "Wednesday": 
-				[
-					{"start": "0900", "finish": "1300"},
-					{"start": "1400", "finish": "1900"}
-				]
-			},
-			{ "Thursday": 
-				[
-					{"start": "0900", "finish": "1300"},
-					{"start": "1400", "finish": "1900"}
-				]
-			},
-			{ "Friday": 
-				[
-					{"start": "0900", "finish": "1300"},
-					{"start": "1400", "finish": "1900"}
-				]
-			},
-			{ "Saturday": 
-				[
-					{"start": "0900", "finish": "1300"},
-					{"start": "1400", "finish": "1900"}
-				]
-			},
-			{ "Sunday": 
-				[
-					{"start": "0900", "finish": "1300"},
-					{"start": "1400", "finish": "1900"}
-				]
-			}
-		]
-	}
-]
+[{
+	"title": "Kaimaru",
+	"hours": [{
+			"Monday": [{
+					"start": "0900",
+					"finish": "1300"
+				},
+				{
+					"start": "1400",
+					"finish": "1900"
+				}
+			]
+		},
+		{
+			"Tuesday": [{
+					"start": "0900",
+					"finish": "1300"
+				},
+				{
+					"start": "1400",
+					"finish": "1900"
+				}
+			]
+		},
+		{
+			"Wednesday": [{
+					"start": "0900",
+					"finish": "1300"
+				},
+				{
+					"start": "1400",
+					"finish": "1900"
+				}
+			]
+		},
+		{
+			"Thursday": [{
+					"start": "0900",
+					"finish": "1300"
+				},
+				{
+					"start": "1400",
+					"finish": "1900"
+				}
+			]
+		},
+		{
+			"Friday": [{
+					"start": "0900",
+					"finish": "1300"
+				},
+				{
+					"start": "1400",
+					"finish": "1900"
+				}
+			]
+		},
+		{
+			"Saturday": [{
+					"start": "0900",
+					"finish": "1300"
+				},
+				{
+					"start": "1400",
+					"finish": "1900"
+				}
+			]
+		},
+		{
+			"Sunday": [{
+					"start": "0900",
+					"finish": "1300"
+				},
+				{
+					"start": "1400",
+					"finish": "1900"
+				}
+			]
+		}
+	]
+}]
