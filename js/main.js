@@ -51,15 +51,15 @@ $(document).ready(function(){
 		var time_interval = 0;//measured in seconds
 		//
 		for(var i = 0; i < len; ++i){
-			if(now.diff(moment(tmp[i].start, 'HH:mm')) <= 0 && 
-			now.diff(moment(tmp[i].finish, 'HH:mm')) >= 0){
+			if(now.diff(moment(tmp[i].start, 'HH:mm')) >= 0 && 
+			now.diff(moment(tmp[i].finish, 'HH:mm')) <= 0){
 				is_facility_open = true;
 				time_interval = -now.diff(moment(tmp[i].finish, 'HH:mm'), 'seconds');
 			}
 		}
 		//
 		if(is_facility_open){
-			alert("The " + name + "is open now");
+			$('#indicator').text("The " + name + " is open now.");
 		}
 		else {
 			var i;
@@ -93,10 +93,16 @@ $(document).ready(function(){
 					alert("Something went wrong, it seems that facility working hours are unspecified or the data associated with it doesn't exist");
 				}
 			}
-			alert("The " + name + " is closed now");
-			//alert(time_interval / 3600);
+			$("#indicator").text("The " + name + " is closed now.");
 		}		
-		alert(parseInt(time_interval / 3600) + " " + parseInt((time_interval % 3600) / 60));
+		var cd_days = parseInt(time_interval / 24 / 60 / 60);
+		time_interval -= cd_days * 24 * 60 * 60;
+		var cd_hours = parseInt(time_interval / 60 / 60);
+		time_interval -= cd_hours * 60 * 60;
+		var cd_minutes = parseInt(time_interval / 60);
+		time_interval -= cd_minutes * 60;
+		var cd_seconds = time_interval;
+		$('#countdown').text(cd_days + "d" + cd_hours + "h" + cd_minutes + "m" + cd_seconds + "s till " + (is_facility_open ? "closing" : "opening"));
 	});
 });
 
