@@ -2,78 +2,106 @@
 	"title": "Kaimaru",
 	"hours": [{
 			"Monday": [{
-					"start": "0900",
-					"finish": "1300"
+					"start": "08:00",
+					"finish": "09:30"
 				},
 				{
-					"start": "1400",
-					"finish": "1900"
+					"start": "11:30",
+					"finish": "13:30"
+				},
+				{
+					"start": "17:30",
+					"finish": "19:00"
 				}
 			]
 		},
 		{
 			"Tuesday": [{
-					"start": "0900",
-					"finish": "1300"
+					"start": "08:00",
+					"finish": "09:30"
 				},
 				{
-					"start": "1400",
-					"finish": "1900"
+					"start": "11:30",
+					"finish": "13:30"
+				},
+				{
+					"start": "17:30",
+					"finish": "19:00"
 				}
 			]
 		},
 		{
 			"Wednesday": [{
-					"start": "0900",
-					"finish": "1300"
+					"start": "08:00",
+					"finish": "09:30"
 				},
 				{
-					"start": "1400",
-					"finish": "1900"
+					"start": "11:30",
+					"finish": "13:30"
+				},
+				{
+					"start": "17:30",
+					"finish": "19:00"
 				}
 			]
 		},
 		{
 			"Thursday": [{
-					"start": "0900",
-					"finish": "1300"
+					"start": "08:00",
+					"finish": "09:30"
 				},
 				{
-					"start": "1400",
-					"finish": "1900"
+					"start": "11:30",
+					"finish": "13:30"
+				},
+				{
+					"start": "17:30",
+					"finish": "19:00"
 				}
 			]
 		},
 		{
 			"Friday": [{
-					"start": "0900",
-					"finish": "1300"
+					"start": "08:00",
+					"finish": "09:30"
 				},
 				{
-					"start": "1400",
-					"finish": "1900"
+					"start": "11:30",
+					"finish": "13:30"
+				},
+				{
+					"start": "17:30",
+					"finish": "19:00"
 				}
 			]
 		},
 		{
 			"Saturday": [{
-					"start": "0900",
-					"finish": "1300"
+					"start": "08:00",
+					"finish": "09:30"
 				},
 				{
-					"start": "1400",
-					"finish": "1900"
+					"start": "11:30",
+					"finish": "13:30"
+				},
+				{
+					"start": "17:30",
+					"finish": "19:00"
 				}
 			]
 		},
 		{
 			"Sunday": [{
-					"start": "0900",
-					"finish": "1300"
+					"start": "08:00",
+					"finish": "09:30"
 				},
 				{
-					"start": "1400",
-					"finish": "1900"
+					"start": "11:30",
+					"finish": "13:30"
+				},
+				{
+					"start": "17:30",
+					"finish": "19:00"
 				}
 			]
 		}
