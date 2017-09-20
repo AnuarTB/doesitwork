@@ -38,8 +38,8 @@ $(document).ready(function(){
 	for(var i = 0; i < facility_names.length; i++){
 		$(".selection").append("<option>"+facility_names[i]+"</option>");
 	}
-	//var now = moment().tz("Asia/Seoul");
-	var now = moment("2017-09-21 23:00", "YYYY-MM-DD HH:mm");
+	var now = moment().tz("Asia/Seoul");
+	//var now = moment("2017-09-21 23:00", "YYYY-MM-DD HH:mm");
 	var day_of_week = now.format("E") - 1;//As the function returns the value in range 1..7
 	$(".select-button").click(function(){
 		var name = $('.selection>option:selected').text();
