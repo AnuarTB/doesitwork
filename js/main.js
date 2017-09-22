@@ -42,10 +42,14 @@ function show_countdown(time_interval, is_facility_open){
 	var cd_minutes = parseInt(time_interval / 60);
 	time_interval -= cd_minutes * 60;
 	var cd_seconds = time_interval;
-	$('#countdown').text(cd_days + "d" + cd_hours + "h" + cd_minutes + "m" + cd_seconds + "s till " + (is_facility_open ? "closing" : "opening"));
+	$('#days').text(cd_days);
+	$('#hours').text(cd_hours);
+	$('#minutes').text(cd_minutes);
+	$('#seconds').text(cd_seconds);
 }
 
 $(document).ready(function(){
+	$('#clock').hide();
 	for(var i = 0; i < facility_names.length; i++){
 		$(".selection").append("<option>"+facility_names[i]+"</option>");
 	}
@@ -53,6 +57,7 @@ $(document).ready(function(){
 	//var now = moment("2017-09-21 23:00", "YYYY-MM-DD HH:mm");
 	var day_of_week = now.format("E") - 1;//As the function returns the value in range 1..7
 	$(".select-button").click(function(){
+		
 		var name = $('.selection>option:selected').text();
 		var id = facility_index_by_name(name);
 		var tmp = facility_arr[id].hours[day_of_week];
@@ -106,6 +111,7 @@ $(document).ready(function(){
 			}
 			$("#indicator").text("The " + name + " is closed now.");
 		}		
+		$('#clock').slideDown();
 		setInterval(function(){show_countdown(time_interval, is_facility_open);time_interval--;}, 1000);
 	});
 });

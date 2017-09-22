@@ -2,5 +2,17 @@ body {
   font-family: Arial, Verdana, Helvetica, sans-serif;
 	text-align: center;
 	padding: 0;
-	
+}
+
+#clock {
+	display: block;
+	width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 2px 2px 5px 1px gray;
+}
+
+#indicator {
+	margin: 20px;
+	font-size: 50px;
 }
