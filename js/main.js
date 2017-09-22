@@ -34,6 +34,17 @@ function facility_index_by_name(facility_name){
 	return -1;
 }
 
+function show_countdown(time_interval, is_facility_open){
+	var cd_days = parseInt(time_interval / 24 / 60 / 60);
+	time_interval -= cd_days * 24 * 60 * 60;
+	var cd_hours = parseInt(time_interval / 60 / 60);
+	time_interval -= cd_hours * 60 * 60;
+	var cd_minutes = parseInt(time_interval / 60);
+	time_interval -= cd_minutes * 60;
+	var cd_seconds = time_interval;
+	$('#countdown').text(cd_days + "d" + cd_hours + "h" + cd_minutes + "m" + cd_seconds + "s till " + (is_facility_open ? "closing" : "opening"));
+}
+
 $(document).ready(function(){
 	for(var i = 0; i < facility_names.length; i++){
 		$(".selection").append("<option>"+facility_names[i]+"</option>");
@@ -95,14 +106,7 @@ $(document).ready(function(){
 			}
 			$("#indicator").text("The " + name + " is closed now.");
 		}		
-		var cd_days = parseInt(time_interval / 24 / 60 / 60);
-		time_interval -= cd_days * 24 * 60 * 60;
-		var cd_hours = parseInt(time_interval / 60 / 60);
-		time_interval -= cd_hours * 60 * 60;
-		var cd_minutes = parseInt(time_interval / 60);
-		time_interval -= cd_minutes * 60;
-		var cd_seconds = time_interval;
-		$('#countdown').text(cd_days + "d" + cd_hours + "h" + cd_minutes + "m" + cd_seconds + "s till " + (is_facility_open ? "closing" : "opening"));
+		setInterval(function(){show_countdown(time_interval, is_facility_open);time_interval--;}, 1000);
 	});
 });
 

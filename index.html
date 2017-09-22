@@ -2,24 +2,35 @@
 <html>
 <head>
 	<title>Does it work?</title>
-	<!-- <script type="text/javascript" src="js/require.js"></script> -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
-  <script type="text/javascript" src="js/moment-with-locales.js"></script>
-  <script type="text/javascript" src="js/moment-timezone-with-data.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-  
+	<meta charset="utf-8">    
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- <script type="text/javascript" src="js/require.js"></script> -->
 </head>
 <body>
-	<div>
-	Does 
-	<select class="selection">
-	<!-- Data will be appended here by script-->	
-	</select>
-	work now?
+	<div class="container-fluid">
+		<div class="jumbotron">
+			Does 
+			<select class="selection">
+			<!-- Data will be appended here by script-->	
+			</select>
+			work now?	
+			<button type="button" class="select-button">Select</button>	
+			<div class="container">
+				<p id="indicator" class="text-center"></p>
+				<p id="countdown" class="text-center"></p>
+			</div>
+			<p class="small">The site does not hold the responsibility if the facility hours are wrong. 
+			Be aware during celebrations and national holidays.</p>
+		</div>
 	</div>
-	<button type="button" class="select-button">Select</button>
-	<p id="indicator"></p>
-	<p id="countdown"></p>
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script type="text/javascript" src="js/moment-with-locales.js"></script>
+  <script type="text/javascript" src="js/moment-timezone-with-data.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
