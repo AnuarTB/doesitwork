@@ -35,17 +35,13 @@ function facility_index_by_name(facility_name){
 }
 
 function show_countdown(time_interval, is_facility_open){
-	var cd_days = parseInt(time_interval / 24 / 60 / 60);
-	time_interval -= cd_days * 24 * 60 * 60;
-	var cd_hours = parseInt(time_interval / 60 / 60);
-	time_interval -= cd_hours * 60 * 60;
-	var cd_minutes = parseInt(time_interval / 60);
-	time_interval -= cd_minutes * 60;
-	var cd_seconds = time_interval;
-	$('#days').text(cd_days);
-	$('#hours').text(cd_hours);
-	$('#minutes').text(cd_minutes);
-	$('#seconds').text(cd_seconds);
+	if(time_interval < 0)
+		location.reload();
+	var duration = moment.duration(time_interval, 'seconds');
+	$('#days').html(duration.days() + "<span>DAYS</span>");
+	$('#hours').html(duration.hours() + "<span>HOURS</span>");
+	$('#minutes').html(duration.minutes() + "<span>MINS</span>");
+	$('#seconds').html(duration.seconds() + "<span>SECS</span>");
 }
 
 $(document).ready(function(){
@@ -54,10 +50,8 @@ $(document).ready(function(){
 		$(".selection").append("<option>"+facility_names[i]+"</option>");
 	}
 	var now = moment().tz("Asia/Seoul");
-	//var now = moment("2017-09-21 23:00", "YYYY-MM-DD HH:mm");
 	var day_of_week = now.format("E") - 1;//As the function returns the value in range 1..7
 	$(".select-button").click(function(){
-		
 		var name = $('.selection>option:selected').text();
 		var id = facility_index_by_name(name);
 		var tmp = facility_arr[id].hours[day_of_week];
@@ -75,7 +69,8 @@ $(document).ready(function(){
 		}
 		//
 		if(is_facility_open){
-			$('#indicator').text("The " + name + " is open now.");
+			$('#indicator').html("The <strong>" + name + "</strong> is <strong>open</strong> now.");
+			$('#subindicator').html("<h1>Till closing</h1>");
 		}
 		else {
 			var i;
@@ -109,7 +104,8 @@ $(document).ready(function(){
 					alert("Something went wrong, it seems that facility working hours are unspecified or the data associated with it doesn't exist");
 				}
 			}
-			$("#indicator").text("The " + name + " is closed now.");
+			$('#indicator').html("The <strong>" + name + "</strong> is <strong>closed</strong> now.");
+			$('#subindicator').html("Till opening");
 		}		
 		$('#clock').slideDown();
 		setInterval(function(){show_countdown(time_interval, is_facility_open);time_interval--;}, 1000);

@@ -9,10 +9,50 @@ body {
 	width: 450px;
 	margin-left: auto;
 	margin-right: auto;
-	box-shadow: 2px 2px 5px 1px gray;
+	margin-bottom: 20px;
+}
+
+#clock div {
+	display: inline-block;
+	position: relative;
+	/*padding-top: 0.188em;*/
+	width: 100px;
+	height: 80px;
+	border-radius: 5px;
+	margin-right: 3px;
+	text-align: center;
+	font-size: 50px;
+	color: #ececec;
+}
+
+#clock div span {
+	position: absolute;
+	left: 0;
+	bottom: -15px;
+	clear: both;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100px;
+  height: 20px;
+  font-size: 20px;	
+  color: #2C3E50;
 }
 
 #indicator {
 	margin: 20px;
 	font-size: 50px;
 }
+
+#footer {
+	margin-top: 40px;
+}
+
+#subindicator {
+	margin-top: 40px;
+	font-size: 30px;
+}
+
+
+
+
+
