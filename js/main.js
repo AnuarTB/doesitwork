@@ -38,10 +38,10 @@ function show_countdown(time_interval, is_facility_open){
 	if(time_interval < 0)
 		location.reload();
 	var duration = moment.duration(time_interval, 'seconds');
-	$('#days').html(duration.days() + "<span>DAYS</span>");
-	$('#hours').html(duration.hours() + "<span>HOURS</span>");
-	$('#minutes').html(duration.minutes() + "<span>MINS</span>");
-	$('#seconds').html(duration.seconds() + "<span>SECS</span>");
+	$('#days').html(duration.days());
+	$('#hours').html(duration.hours());
+	$('#minutes').html(duration.minutes());
+	$('#seconds').html(duration.seconds());
 }
 
 $(document).ready(function(){
@@ -70,7 +70,7 @@ $(document).ready(function(){
 		//
 		if(is_facility_open){
 			$('#indicator').html("The <strong>" + name + "</strong> is <strong>open</strong> now.");
-			$('#subindicator').html("<h1>Till closing</h1>");
+			$('#subindicator').html("<h1>Till <strong>closing</strong></h1>");
 		}
 		else {
 			var i;
@@ -105,7 +105,7 @@ $(document).ready(function(){
 				}
 			}
 			$('#indicator').html("The <strong>" + name + "</strong> is <strong>closed</strong> now.");
-			$('#subindicator').html("Till opening");
+			$('#subindicator').html("Till <strong>opening</strong>");
 		}		
 		$('#clock').slideDown();
 		setInterval(function(){show_countdown(time_interval, is_facility_open);time_interval--;}, 1000);

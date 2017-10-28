@@ -5,51 +5,45 @@ body {
 }
 
 #clock {
-	display: block;
-	width: 450px;
+	display: block;	
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 20px;
+	margin-bottom: 1.25em;
 }
 
-#clock div {
+#clock > div {
 	display: inline-block;
-	position: relative;
-	/*padding-top: 0.188em;*/
-	width: 100px;
-	height: 80px;
-	border-radius: 5px;
-	margin-right: 3px;
-	text-align: center;
-	font-size: 50px;
-	color: #ececec;
+	width: 20%;
+	height: 100%;
 }
 
-#clock div span {
-	position: absolute;
-	left: 0;
-	bottom: -15px;
-	clear: both;
+#clock > div > div{
+	display: block;
+  font-size: 300%; 
   text-align: center;
-  text-transform: uppercase;
-  width: 100px;
-  height: 20px;
-  font-size: 20px;	
-  color: #2C3E50;
+	color: #ececec;
+	border-radius: 10%;
 }
+
+#clock > div > span {
+  text-transform: uppercase;
+  color: #2C3E50;
+  font-size: 100%;	
+}
+
 
 #indicator {
-	margin: 20px;
-	font-size: 50px;
+	margin: 0.25em;
+	font-size: 300%;
 }
 
 #footer {
-	margin-top: 40px;
+	margin-top: 2.5em;
 }
 
 #subindicator {
-	margin-top: 40px;
-	font-size: 30px;
+	margin-top: 1em;
+	font-size: 200%;
 }
 
 
