@@ -15,11 +15,11 @@
 		listLoad.then(function(fac_arr){
 			$(function(){
 				$('#clock').hide();
-				for(var i = 0; i < fac_arr.length; i++){
+				for(let i = 0; i < fac_arr.length; i++){
 					$(".selection").append("<option value="+fac_arr[i].file+">"+fac_arr[i].title+"</option>");
 				}
-				var now = moment().tz("Asia/Seoul");
-				var day_of_week = now.format("E") - 1;
+				let now = moment().tz("Asia/Seoul");
+				let day_of_week = now.format("E") - 1;
 				//As the function returns the value in range 1..7
 				$(".select-button").click(function(){
 					let fileUrl = $('.selection>option:selected').val();
@@ -102,6 +102,7 @@
 					});
 					loadFacilityInfo.catch(function(err){
 						alert("Something went wrong :( Sorry for inconvinience.");
+						console.log("In promise loadFacilityInfo");
 						console.log(err);
 					});
 				});
@@ -110,6 +111,7 @@
 		
 		listLoad.catch(function(err){
 			alert("Something went wrong :( Sorry for inconvinience.");
+			console.log("In promise listLoad");
 			console.log(err);
 		});
 		

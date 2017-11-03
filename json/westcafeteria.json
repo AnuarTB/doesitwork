@@ -1,13 +1,13 @@
 {
-	"title": "Kaimaru (Cafeteria)",
+	"title": "West Cafeteria",
 	"hours": [{
 		"Monday": [{
 			"start": "08:00",
-			"finish": "09:30"
+			"finish": "10:00"
 		},
 		{
 			"start": "11:30",
-			"finish": "13:30"
+			"finish": "14:00"
 		},
 		{
 			"start": "17:30",
@@ -18,11 +18,11 @@
 	{
 		"Tuesday": [{
 			"start": "08:00",
-			"finish": "09:30"
+			"finish": "10:00"
 		},
 		{
 			"start": "11:30",
-			"finish": "13:30"
+			"finish": "14:00"
 		},
 		{
 			"start": "17:30",
@@ -33,11 +33,11 @@
 	{
 		"Wednesday": [{
 			"start": "08:00",
-			"finish": "09:30"
+			"finish": "10:00"
 		},
 		{
 			"start": "11:30",
-			"finish": "13:30"
+			"finish": "14:00"
 		},
 		{
 			"start": "17:30",
@@ -48,11 +48,11 @@
 	{
 		"Thursday": [{
 			"start": "08:00",
-			"finish": "09:30"
+			"finish": "10:00"
 		},
 		{
 			"start": "11:30",
-			"finish": "13:30"
+			"finish": "14:00"
 		},
 		{
 			"start": "17:30",
@@ -63,11 +63,11 @@
 	{
 		"Friday": [{
 			"start": "08:00",
-			"finish": "09:30"
+			"finish": "10:00"
 		},
 		{
 			"start": "11:30",
-			"finish": "13:30"
+			"finish": "14:00"
 		},
 		{
 			"start": "17:30",
@@ -82,7 +82,7 @@
 		},
 		{
 			"start": "11:30",
-			"finish": "13:30"
+			"finish": "14:00"
 		},
 		{
 			"start": "17:30",
@@ -97,7 +97,7 @@
 		},
 		{
 			"start": "11:30",
-			"finish": "13:30"
+			"finish": "14:00"
 		},
 		{
 			"start": "17:30",

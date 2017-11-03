@@ -1,0 +1,49 @@
+{
+	"title": "DDDN Pizza",
+	"hours": [{
+		"Monday": [{
+			"start": "09:00",
+			"finish": "19:00"
+		}
+		]
+	},
+	{
+		"Tuesday": [{
+			"start": "09:00",
+			"finish": "19:00"
+		}
+		]
+	},
+	{
+		"Wednesday": [{
+			"start": "09:00",
+			"finish": "19:00"
+		}
+		]
+	},
+	{
+		"Thursday": [{
+			"start": "09:00",
+			"finish": "19:00"
+		}
+		]
+	},
+	{
+		"Friday": [{
+			"start": "09:00",
+			"finish": "19:00"
+		}
+		]
+	},
+	{
+		"Saturday": [{
+			"start": "11:00",
+			"finish": "18:00"
+		}
+		]
+	},
+	{
+		"Sunday": [		]
+	}
+	]
+}

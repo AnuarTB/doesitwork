@@ -1,0 +1,77 @@
+{
+	"title": "North Mejom",
+	"hours": [{
+		"Monday": [{
+			"start": "00:00",
+			"finish": "02:00"
+		},
+		{
+			"start": "08:00",
+			"finish": "24:00"
+		}
+		]
+	},
+	{
+		"Tuesday": [{
+			"start": "00:00",
+			"finish": "03:00"
+		},
+		{
+			"start": "08:00",
+			"finish": "24:00"
+		}
+		]
+	},
+	{
+		"Wednesday": [{
+			"start": "00:00",
+			"finish": "03:00"
+		},
+		{
+			"start": "08:00",
+			"finish": "24:00"
+		}
+		]
+	},
+	{
+		"Thursday": [{
+			"start": "00:00",
+			"finish": "03:00"
+		},
+		{
+			"start": "08:00",
+			"finish": "24:00"
+		}
+		]
+	},
+	{
+		"Friday": [{
+			"start": "00:00",
+			"finish": "03:00"
+		},
+		{
+			"start": "08:00",
+			"finish": "24:00"
+		}
+		]
+	},
+	{
+		"Saturday": [{
+			"start": "00:00",
+			"finish": "03:00"
+		},
+		{
+			"start": "09:00",
+			"finish": "19:00"
+		}
+		]
+	},
+	{
+		"Sunday": [{
+			"start": "09:00",
+			"finish": "24:00"
+		}
+		]
+	}
+	]
+}

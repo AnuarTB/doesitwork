@@ -1,0 +1,65 @@
+{
+	"title": "Professor Union (cafeteria)",
+	"hours": [{
+		"Monday": [{
+			"start": "11:20",
+			"finish": "13:30"
+		},
+		{
+			"start": "17:30",
+			"finish": "18:30"
+		}
+		]
+	},
+	{
+		"Tuesday": [{
+			"start": "11:20",
+			"finish": "13:30"
+		},
+		{
+			"start": "17:30",
+			"finish": "18:30"
+		}
+		]
+	},
+	{
+		"Wednesday": [{
+			"start": "11:20",
+			"finish": "13:30"
+		},
+		{
+			"start": "17:30",
+			"finish": "18:30"
+		}
+		]
+	},
+	{
+		"Thursday": [{
+			"start": "11:20",
+			"finish": "13:30"
+		},
+		{
+			"start": "17:30",
+			"finish": "18:30"
+		}
+		]
+	},
+	{
+		"Friday": [{
+			"start": "11:20",
+			"finish": "13:30"
+		},
+		{
+			"start": "17:30",
+			"finish": "18:30"
+		}
+		]
+	},
+	{
+		"Saturday": [		]
+	},
+	{
+		"Sunday": [		]
+	}
+	]
+}

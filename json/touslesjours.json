@@ -1,0 +1,53 @@
+{
+	"title": "Tous les Jours",
+	"hours": [{
+		"Monday": [{
+			"start": "07:00",
+			"finish": "24:00"
+		}
+		]
+	},
+	{
+		"Tuesday": [{
+			"start": "07:00",
+			"finish": "24:00"
+		}
+		]
+	},
+	{
+		"Wednesday": [{
+			"start": "07:00",
+			"finish": "24:00"
+		}
+		]
+	},
+	{
+		"Thursday": [{
+			"start": "07:00",
+			"finish": "24:00"
+		}
+		]
+	},
+	{
+		"Friday": [{
+			"start": "07:00",
+			"finish": "24:00"
+		}
+		]
+	},
+	{
+		"Saturday": [{
+			"start": "07:00",
+			"finish": "24:00"
+		}
+		]
+	},
+	{
+		"Sunday": [{
+			"start": "07:00",
+			"finish": "24:00"
+		}
+		]
+	}
+	]
+}

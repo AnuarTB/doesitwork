@@ -1,0 +1,53 @@
+{
+	"title": "Handel & Gretel",
+	"hours": [{
+		"Monday": [{
+			"start": "08:00",
+			"finish": "24:00"
+		}
+		]
+	},
+	{
+		"Tuesday": [{
+			"start": "08:00",
+			"finish": "24:00"
+		}
+		]
+	},
+	{
+		"Wednesday": [{
+			"start": "08:00",
+			"finish": "24:00"
+		}
+		]
+	},
+	{
+		"Thursday": [{
+			"start": "08:00",
+			"finish": "24:00"
+		}
+		]
+	},
+	{
+		"Friday": [{
+			"start": "08:00",
+			"finish": "24:00"
+		}
+		]
+	},
+	{
+		"Saturday": [{
+			"start": "08:00",
+			"finish": "22:00"
+		}
+		]
+	},
+	{
+		"Sunday": [{
+			"start": "08:00",
+			"finish": "22:00"
+		}
+		]
+	}
+	]
+}

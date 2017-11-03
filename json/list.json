@@ -1,4 +1,21 @@
 [
-{"title": "Kaimaru", "file": "kaimaru.json"}, 
-{"title": "N11", "file": "kaimaru.json"}
+	{"title": "Kaimaru (Cafeteria)", "file": "kaimaru.json"},
+	{"title": "West Cafeteria", "file": "westcafeteria.json"},
+	{"title": "Taewoolguan TTuk Bae Gi", "file": "ttukbaegi.json"},
+	{"title": "Professor Union (cafeteria)", "file": "profunioncafe.json"},
+	{"title": "Pepper's Restaraunt", "file": "pepper.json"},
+	{"title": "Mangosix", "file": "mangosix.json"},
+	{"title": "The Coffee Bean & Tea Leaf", "file": "coffebean.json"},
+	{"title": "Café Droptop", "file": "droptop.json"},
+	{"title": "Café Gran", "file": "gran.json"},
+	{"title": "Handel & Gretel", "file": "handelandgretel.json"},
+	{"title": "A Twosome Place", "file": "twosomeplace.json"},
+	{"title": "Tous les Jours", "file": "touslesjours.json"},
+	{"title": "Dunkin Donuts", "file": "dunkindonuts.json"},
+	{"title": "DDDN Pizza", "file": "dddnpizza.json"},
+	{"title": "Lotteria", "file": "lotteria.json"},
+	{"title": "SUBWAY", "file": "subwayres.json"},
+	{"title": "N13 Convenience Store", "file": "n13conviniencestore.json"},
+	{"title": "North Mejom", "file": "northmejom.json"}
+	
 ]

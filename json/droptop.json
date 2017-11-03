@@ -1,0 +1,53 @@
+{
+	"title": "Café Droptop",
+	"hours": [{
+		"Monday": [{
+			"start": "08:00",
+			"finish": "22:00"
+		}
+		]
+	},
+	{
+		"Tuesday": [{
+			"start": "08:00",
+			"finish": "22:00"
+		}
+		]
+	},
+	{
+		"Wednesday": [{
+			"start": "08:00",
+			"finish": "22:00"
+		}
+		]
+	},
+	{
+		"Thursday": [{
+			"start": "08:00",
+			"finish": "22:00"
+		}
+		]
+	},
+	{
+		"Friday": [{
+			"start": "08:00",
+			"finish": "22:00"
+		}
+		]
+	},
+	{
+		"Saturday": [{
+			"start": "09:00",
+			"finish": "21:00"
+		}
+		]
+	},
+	{
+		"Sunday": [{
+			"start": "09:00",
+			"finish": "21:00"
+		}
+		]
+	}
+	]
+}

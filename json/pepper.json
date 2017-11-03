@@ -1,0 +1,69 @@
+{
+	"title": "Pepper's Restaraunt",
+	"hours": [{
+		"Monday": [{
+			"start": "11:00",
+			"finish": "14:00"
+		},
+		{
+			"start": "17:00",
+			"finish": "20:00"
+		}
+		]
+	},
+	{
+		"Tuesday": [{
+			"start": "11:00",
+			"finish": "14:00"
+		},
+		{
+			"start": "17:00",
+			"finish": "20:00"
+		}
+		]
+	},
+	{
+		"Wednesday": [{
+			"start": "11:00",
+			"finish": "14:00"
+		},
+		{
+			"start": "17:00",
+			"finish": "20:00"
+		}
+		]
+	},
+	{
+		"Thursday": [{
+			"start": "11:00",
+			"finish": "14:00"
+		},
+		{
+			"start": "17:00",
+			"finish": "20:00"
+		}
+		]
+	},
+	{
+		"Friday": [{
+			"start": "11:00",
+			"finish": "14:00"
+		},
+		{
+			"start": "17:00",
+			"finish": "20:00"
+		}
+		]
+	},
+	{
+		"Saturday": [		]
+	},
+	{
+		"Sunday": [{
+			"start": "11:00",
+			"finish": "20:00"
+		}
+		]
+	}
+	]
+}

@@ -1,0 +1,51 @@
+[
+{
+	"group": "Cafeteria",
+	"items": 
+	[
+		{"title": "Kaimaru", "file": "kaimaru.json"}
+	] 
+},
+
+{
+	"group": "Cafe",
+	"items": 
+	[
+	]
+},
+
+{
+	"group": "Fast Food",
+	"items": 
+	[
+	]
+},
+
+{
+	"group": "Convenience Store",
+	"items": 
+	[
+	]
+},
+
+{
+	"group": "Printing Service",
+	"items": 
+	[
+	]
+},
+
+{
+	"group": "Welfare Facilities",
+	"items": 
+	[
+	]
+},
+
+{
+	"group": "KAIST Brand Store",
+	"items": 
+	[
+	]
+}
+]

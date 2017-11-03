@@ -1,0 +1,53 @@
+{
+	"title": "The Coffee Bean & Tea Leaf",
+	"hours": [{
+		"Monday": [{
+			"start": "09:00",
+			"finish": "22:30"
+		}
+		]
+	},
+	{
+		"Tuesday": [{
+			"start": "09:00",
+			"finish": "22:30"
+		}
+		]
+	},
+	{
+		"Wednesday": [{
+			"start": "09:00",
+			"finish": "22:30"
+		}
+		]
+	},
+	{
+		"Thursday": [{
+			"start": "09:00",
+			"finish": "22:30"
+		}
+		]
+	},
+	{
+		"Friday": [{
+			"start": "09:00",
+			"finish": "22:30"
+		}
+		]
+	},
+	{
+		"Saturday": [{
+			"start": "09:00",
+			"finish": "22:30"
+		}
+		]
+	},
+	{
+		"Sunday": [{
+			"start": "09:00",
+			"finish": "22:30"
+		}
+		]
+	}
+	]
+}

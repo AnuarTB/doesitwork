@@ -1,0 +1,49 @@
+{
+	"title": "N13 Convenience Store",
+	"hours": [{
+		"Monday": [{
+			"start": "09:00",
+			"finish": "19:00"
+		}
+		]
+	},
+	{
+		"Tuesday": [{
+			"start": "09:00",
+			"finish": "19:00"
+		}
+		]
+	},
+	{
+		"Wednesday": [{
+			"start": "09:00",
+			"finish": "19:00"
+		}
+		]
+	},
+	{
+		"Thursday": [{
+			"start": "09:00",
+			"finish": "19:00"
+		}
+		]
+	},
+	{
+		"Friday": [{
+			"start": "09:00",
+			"finish": "19:00"
+		}
+		]
+	},
+	{
+		"Saturday": [{
+			"start": "09:00",
+			"finish": "15:00"
+		}
+		]
+	},
+	{
+		"Sunday": [		]
+	}
+	]
+}

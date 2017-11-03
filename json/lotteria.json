@@ -1,0 +1,81 @@
+{
+	"title": "Lotteria",
+	"hours": [{
+		"Monday": [{
+			"start": "09:00",
+			"finish": "24:00"
+		},
+		{
+			"start": "00:00",
+			"finish": "03:00"
+		}
+		]
+	},
+	{
+		"Tuesday": [{
+			"start": "09:00",
+			"finish": "24:00"
+		},
+		{
+			"start": "00:00",
+			"finish": "03:00"
+		}
+		]
+	},
+	{
+		"Wednesday": [{
+			"start": "09:00",
+			"finish": "24:00"
+		},
+		{
+			"start": "00:00",
+			"finish": "03:00"
+		}
+		]
+	},
+	{
+		"Thursday": [{
+			"start": "09:00",
+			"finish": "24:00"
+		},
+		{
+			"start": "00:00",
+			"finish": "03:00"
+		}
+		]
+	},
+	{
+		"Friday": [{
+			"start": "09:00",
+			"finish": "24:00"
+		},
+		{
+			"start": "00:00",
+			"finish": "03:00"
+		}
+		]
+	},
+	{
+		"Saturday": [{
+			"start": "09:00",
+			"finish": "24:00"
+		},
+		{
+			"start": "00:00",
+			"finish": "03:00"
+		}
+		]
+	},
+	{
+		"Sunday": [{
+			"start": "09:00",
+			"finish": "24:00"
+		},
+		{
+			"start": "00:00",
+			"finish": "03:00"
+		}
+		]
+	}
+	]
+}
