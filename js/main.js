@@ -12,6 +12,7 @@
 			});
 		});
 		
+		let timer = null;
 		listLoad.then(function(fac_arr){
 			$(function(){
 				$('#clock').hide();
@@ -39,11 +40,13 @@
 						let is_facility_open = false;
 						let len = tmp.length;
 						let time_interval = 0;//measured in seconds
+						if(timer)
+							window.clearTimeout(timer);
 						//
 						let show_countdown = function(time_interval, is_facility_open){
 							if(time_interval < 0)
 								location.reload();
-							var duration = moment.duration(time_interval, 'seconds');
+							let duration = moment.duration(time_interval, 'seconds');
 							$('#days').html(duration.days());
 							$('#hours').html(duration.hours());
 							$('#minutes').html(duration.minutes());
@@ -98,7 +101,11 @@
 							$('#subindicator').html("Till <strong>opening</strong>");
 						}		
 						$('#clock').slideDown();
-						setInterval(function(){show_countdown(time_interval, is_facility_open);time_interval--;}, 1000);
+						(function countdown() {
+							show_countdown(time_interval, is_facility_open);
+							time_interval--;
+							timer = setTimeout(countdown, 1000);
+						}());
 					});
 					loadFacilityInfo.catch(function(err){
 						alert("Something went wrong :( Sorry for inconvinience.");
