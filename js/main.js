@@ -62,7 +62,7 @@
 						}
 						//
 						if(is_facility_open){
-							$('#indicator').html("The <strong>" + name + "</strong> is <strong>open</strong> now.");
+							$('#indicator').html("The <strong>" + name + "</strong> is <span class=\"text-success\"><strong>open</strong></span> now.");
 							$('#subindicator').html("<h1>Till <strong>closing</strong></h1>");
 						}
 						else {
@@ -97,7 +97,7 @@
 									alert("Something went wrong, it seems that facility working hours are unspecified or the data associated with it doesn't exist");
 								}
 							}
-							$('#indicator').html("The <strong>" + name + "</strong> is <strong>closed</strong> now.");
+							$('#indicator').html("The <strong>" + name + "</strong> is <span class=\"text-danger\"><strong>closed</strong></span> now.");
 							$('#subindicator').html("Till <strong>opening</strong>");
 						}		
 						$('#clock').slideDown();
