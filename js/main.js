@@ -37,6 +37,7 @@
 						let name = $('.selection>option:selected').text();
 						let tmp = facility_info.hours[day_of_week];
 						tmp = tmp[Object.keys(tmp)[0]];
+						console.log(tmp);
 						let is_facility_open = false;
 						let len = tmp.length;
 						let time_interval = 0;//measured in seconds
@@ -53,13 +54,15 @@
 							$('#seconds').html(duration.seconds());
 						}
 						//
-						for(let i = 0; i < len; ++i){
-							if(now.diff(moment(tmp[i].start, 'HH:mm')) >= 0 && 
-							now.diff(moment(tmp[i].finish, 'HH:mm')) <= 0){
-								is_facility_open = true;
-								time_interval = -now.diff(moment(tmp[i].finish, 'HH:mm'), 'seconds');
+						if(tmp){
+							for(let i = 0; i < len; ++i){
+								if(now.diff(moment(tmp[i].start, 'HH:mm')) >= 0 && 
+								now.diff(moment(tmp[i].finish, 'HH:mm')) <= 0){
+									is_facility_open = true;
+									time_interval = -now.diff(moment(tmp[i].finish, 'HH:mm'), 'seconds');
+								}
 							}
-						}
+						}	
 						//
 						if(is_facility_open){
 							$('#indicator').html("The <strong>" + name + "</strong> is <span class=\"text-success\"><strong>open</strong></span> now.");
@@ -72,7 +75,7 @@
 									break;
 								}
 							}
-							if(i == -1){
+							if(i == -1 && tmp.length){
 								time_interval = -now.diff(moment(tmp[0].start, 'HH:mm'), 'seconds');
 							} else if (i != len - 1){
 								time_interval = -now.diff(moment(tmp[i + 1].start, 'HH:mm'), 'seconds');
@@ -84,7 +87,7 @@
 									next_day = parseInt((next_day + 1) % 7);
 									then = then.add(1, 'days');
 									then = then.startOf('day');
-									let tmp1 = facility_arr[id].hours[next_day];
+									let tmp1 = facility_info.hours[next_day];
 									tmp1 = tmp1[Object.keys(tmp1)[0]];
 									if(tmp1.length != 0){
 										then = then.add(moment(tmp1[0].start, "HH:mm").hours(), 'h');
