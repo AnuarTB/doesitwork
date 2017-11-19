@@ -1,2 +1,3 @@
-# doesitwork
-Does it work - website for looking working hours of certain facilities
+# doesitwork 
+Does it work? - the website for knowing working hours 
+of certain facilities in KAIST. 
