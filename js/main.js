@@ -37,7 +37,6 @@
 						let name = $('.selection>option:selected').text();
 						let tmp = facility_info.hours[day_of_week];
 						tmp = tmp[Object.keys(tmp)[0]];
-						console.log(tmp);
 						let is_facility_open = false;
 						let len = tmp.length;
 						let time_interval = 0;//measured in seconds
@@ -62,7 +61,16 @@
 									time_interval = -now.diff(moment(tmp[i].finish, 'HH:mm'), 'seconds');
 								}
 							}
-						}	
+							//if the facility works at night, the duration must be increased
+							//TODO, this code only works if the facility have breaks in working hours
+							//however if facility works 24 hours per day, the result is going to be wrong
+							let next_day = parseInt((day_of_week + 1) % 7);
+							let tmp1 = facility_info.hours[next_day];
+							tmp1 = tmp1[Object.keys(tmp1)[0]];
+							if(tmp1 && tmp1[0].start === "00:00"){
+								time_interval -= moment(tmp1[0].start, 'HH:mm').diff(moment(tmp1[0].finish, 'HH:mm'), 'seconds');
+							}
+						}
 						//
 						if(is_facility_open){
 							$('#indicator').html("The <strong>" + name + "</strong> is <span class=\"text-success\"><strong>open</strong></span> now.");
@@ -75,7 +83,7 @@
 									break;
 								}
 							}
-							if(i == -1 && tmp.length){
+							if(i === -1 && tmp.length){
 								time_interval = -now.diff(moment(tmp[0].start, 'HH:mm'), 'seconds');
 							} else if (i != len - 1){
 								time_interval = -now.diff(moment(tmp[i + 1].start, 'HH:mm'), 'seconds');
